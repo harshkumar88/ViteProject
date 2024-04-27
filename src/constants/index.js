@@ -39,30 +39,9 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Simple CRM",
+    title: "",
     content:
-      "A user-friendly solution for a complete customer overview using 360-degree view and collaboration tools with just a few clicks away.",
-  },
-  {
-    id: "feature-2",
-    icon: shield,
-    title: "Custom CRM",
-    content:
-      "Customize your CRM effortlessly through Codeless Solution, utilizing Intuitive Drag and Drop functionality to easily design Fields, Reports, Dashboards, Custom Views, and Layouts.",
-  },
-  {
-    id: "feature-3",
-    icon: send,
-    title: "Integrated CRM",
-    content:
-      "Build customer trust and loyalty with responsive service through App Integrations. Foster seamless communication, streamlined processes, agent productivity and efficient data sharing across omnichannel and cross functional tools.",
-  },
-  {
-    id: "feature-4",
-    icon: send,
-    title: "Mobile CRM",
-    content:
-      "Having a field service team? No Problem. Manage customer and make data driven decisions with no limits. - Anywhere, Anytime",
+      "I'm pursuing a bachelor's in computer science at Chitkara University. I'm a CSE student currently in my third year. I'm learning a variety of programming languages, including C++, Java, Python, and Javascript. I'm also getting a good handle on C++'s data structures. I want to work in Mern Stack Technology, so I also start practicing frontend (Html, Css, React, Javascript) and backend languages (Node js,Mongodb). I love what I do. and constantly willing to pick up new skills, finish projects on schedule, and master new technologies.",
   },
 ];
 

@@ -19,7 +19,7 @@ const Navbar = ({ changeHeader }) => {
     }
   };
   return (
-    <nav className="w-full flex py-5 justify-between items-center navbar">
+    <nav className="w-full flex ss:py-5 py-2 justify-between items-center navbar">
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li

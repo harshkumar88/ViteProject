@@ -1,12 +1,12 @@
 import { AnimatedContent } from ".";
-import { dashboardDesign } from "../assets";
+import { harshProfile } from "../assets";
 import { features } from "../constants";
 import styles, { layout } from "../style";
 import { motion } from "framer-motion";
 
 const FeatureCard = ({ icon, title, content, index, activeScroll }) => (
   <div
-    className={`flex flex-row md:p-6 p-3 rounded-[20px] md:w-[45%] sm:w-[100%] xs:w-[100%] ${
+    className={`flex flex-row md:p-6 p-3 rounded-[20px] ${
       index !== features.length - 1 ? "sm:mb-2" : "sm:mb-2"
     } feature-card `}
   >
@@ -21,7 +21,13 @@ const FeatureCard = ({ icon, title, content, index, activeScroll }) => (
       </h4>
       <p className="font-poppins font-normal text-slate-600 text-[16px] leading-[24px]">
         {content}
-      </p>
+      </p>{" "}
+      <button
+        type="button"
+        className={`py-2 px-2 mt-6 font-poppins font-medium text-[18px] text-white bg-blue-gradient rounded-[10px] outline-none  w-fit`}
+      >
+        Resume
+      </button>
     </div>
   </div>
 );
@@ -33,24 +39,26 @@ const Business = () => (
       className={`${styles.flexCenter} flex-col flex-wrap sm:mb-5 mb-6 pt-10 gap-3  `}
     >
       <span className=" text-gradient-dark xl:text-[50px] lg:text-[48px] md:text-[40px] text-[30px]">
-        Secure and intelligent conversational AI
+        About Me
       </span>
       <span className="text-slate-600 lg:text-[24px] text-[18px]">
-        Advanced ML and NLP technologies continuously learning for improved
-        understanding and personalized responses
+        As a Full Stack developer, my name is Harsh.
       </span>
     </section>
     <AnimatedContent>
-      <section id="features" className={`${layout.section} px-3 sm:flex-col`}>
+      <section
+        id="features"
+        className={`flex px-3 ss:flex-row justify-between`}
+      >
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className={`${layout.sectionInfo} md:w-[40%] sm:mb-4 `}
+          className={`${layout.sectionInfo} ss:w-[25%]  `}
         >
-          <img src={dashboardDesign} />
+          <img src={harshProfile} className="rounded-full" />
         </motion.div>
 
         <div
-          className={`${layout.sectionImg} md:w-[60%] sm:w-full   flex-row `}
+          className={`${layout.sectionImg} ss:w-[60%]  text-justify flex-row `}
         >
           {features.map((feature, index) => (
             <FeatureCard key={feature.id} {...feature} index={index} />

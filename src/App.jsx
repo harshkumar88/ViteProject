@@ -5,7 +5,6 @@ import ContactManagement from "./components/ContactManagement";
 import Opportunity from "./components/Opportunity";
 import Invoice from "./components/Invoice";
 import { useEffect, useState } from "react";
-import { ZenomLogo } from "./assets";
 
 const App = () => {
   const [changeHeader, setChangeHeader] = useState(false);

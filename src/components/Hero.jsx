@@ -54,7 +54,7 @@ const Hero = () => {
     <AnimatedContent>
       <section
         id="home"
-        className={`flex md:flex-row flex-col ${styles.paddingY} h-[70vh]`}
+        className={`flex md:flex-row flex-col ${styles.paddingY} ss:h-[70vh] h-[50vh]`}
       >
         <div
           className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
@@ -68,12 +68,17 @@ const Hero = () => {
                   <span className="text-gradient">I'm Harsh Kumar</span>
                 </span>
               </div>
-              <h2 className="text-5xl font-poppins ss:text-[50px] text-[28px] ">
+              <h2 className="text-5xl font-poppins ss:text-[50px] text-[27px] ">
                 <span className="text-gradient scale_animate"> {content}</span>
                 <span className="text-white">|</span>
               </h2>
             </div>
-            <Button className="text-white border-teal-200" text="Hire Me" />
+            <button
+              type="button"
+              className={`py-3 px-5 font-poppins font-medium text-[18px] text-white bg-blue-gradient rounded-[10px] outline-none ${styles}`}
+            >
+              Hire Me
+            </button>
           </div>
         </div>
       </section>
