@@ -20,15 +20,6 @@ const Navbar = ({ changeHeader }) => {
   };
   return (
     <nav className="w-full flex py-5 justify-between items-center navbar">
-      <img
-        src={ZenomLogo}
-        alt="Zenome"
-        className={`w-[90px] h-[34px] ${
-          !changeHeader ? "bg-black text-black" : "text-white font-bold"
-        }`}
-        loading="eager"
-      />
-
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li

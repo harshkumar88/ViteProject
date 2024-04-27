@@ -9,38 +9,19 @@ import { ZenomLogo } from "./assets";
 
 const App = () => {
   const [changeHeader, setChangeHeader] = useState(false);
-  const [loader, setLoader] = useState(false);
 
   useEffect(() => {
-    setLoader(false);
     window.addEventListener("scroll", function (event) {
       handleScroll();
     });
   }, []);
-
-  useEffect(() => {
-    if (loader) {
-      setTimeout(() => {
-        setLoader(false);
-      }, 800);
-    }
-  }, [loader]);
 
   function handleScroll() {
     const scrolledToTop = window.scrollY === 0;
     setChangeHeader(!scrolledToTop);
   }
 
-  return loader ? (
-    <div className="center_div">
-      <img
-        src={ZenomLogo}
-        alt="Zenome"
-        className={`w-[30vw] h-[30%] bg-black`}
-        loading="eager"
-      />
-    </div>
-  ) : (
+  return (
     <div className="bg-primary w-full  relative">
       <div
         className={`${styles.paddingX} ${styles.flexCenter} ${
