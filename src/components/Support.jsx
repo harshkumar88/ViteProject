@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { AnimatedContent } from ".";
 import { features, supportFeature } from "../constants";
 import styles, { layout } from "../style";
@@ -37,16 +38,23 @@ const FeatureCard = ({ icon, title, sub_desc, content, index }) => (
 );
 
 const Support = () => {
+  const scrollRef = useRef(null);
+
   return (
     <>
       <section
+        data-scroll-section
         id="platform"
         className={`${styles.flexCenter} flex-col flex-wrap sm:mb-5 mb-6 pt-10 gap-3 `}
       >
         <span className=" text-gradient-dark xl:text-[50px] lg:text-[48px] md:text-[40px] text-[30px]">
           Intuitive and contextual support
         </span>
-        <span className="text-slate-600 lg:text-[24px] text-[18px]">
+        <span
+          className="text-slate-600 lg:text-[24px] text-[18px]"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Empower your support teams to deliver timely and consistent support at
           any scale
         </span>
