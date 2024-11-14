@@ -41,20 +41,20 @@ const Business = () => (
       <span className=" text-gradient-dark xl:text-[50px] lg:text-[48px] md:text-[40px] text-[30px]">
         About Me
       </span>
-      <span className="text-slate-600 lg:text-[24px] text-[18px]">
+      <span className="text-slate-600 lg:text-[24px] text-[18px] text-justify">
         As a Full Stack developer, my name is Harsh.
       </span>
     </section>
     <AnimatedContent>
       <section
         id="features"
-        className={`flex px-3 ss:flex-row justify-between`}
+        className={`flex px-3 ss:flex-row   flex-col justify-between`}
       >
         <motion.div
           whileHover={{ scale: 1.1 }}
-          className={`${layout.sectionInfo} ss:w-[25%]  `}
+          className={`${layout.sectionInfo} ss:w-[25%] w-[50%] ss:m-0 m-auto justify-center `}
         >
-          <img src={harshProfile} className="rounded-full" />
+          <img src={harshProfile} className="rounded-full w-[100%]" />
         </motion.div>
 
         <div
